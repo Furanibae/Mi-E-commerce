@@ -1,0 +1,155 @@
+/*Estilos por: Francisca Aros*/
+
+/*COLORES*/
+/*Rosa: #e67a7a*/
+/*Gris: #e9e9e9;*/
+
+/*TIPOGRAFÍA*/
+/*font-family: 'Roboto', sans-serif;*/    
+/*---------------------------------------------------------------------*/
+
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*ORGANIZACIÓN*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-rows: 0.1fr 1.5fr; 
+    grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+    gap: 10px;
+    background-color: #f8fafc; 
+}
+
+.header{
+    grid-area:header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e67a7a;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    grid-area:aside;
+    max-height: 16%;  
+    margin-top: 8%;
+    margin-left: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #f3f2f2;
+    padding: 1% 4.5% 7% 5%;
+    position: sticky;
+    top: 10px;    
+}
+
+.main{
+    display: grid;
+    grid-template-areas:
+    "card-1 card-1 card-1"
+    "card-1 card-1 card-1"; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area:main;
+    max-width: 60%;
+    margin-top: 2%;
+}
+
+.footer{
+    grid-area:footer;
+    text-align: center;
+    padding: 1%;
+    margin-top: 4%;
+    background-color: #e67a7a;
+    color: white;
+}
+
+
+/*CARDS*/
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top:12px;  
+    border-radius: 5px;
+}
+
+.card-1:hover{
+    box-shadow: #c9c9c9 5px 5px 5px 5px;
+}
+
+
+img{
+    width: 99%;
+    border-radius: 5px;
+}
+
+.card-body{
+    background-color: rgb(255, 255, 255);
+    padding: 6.5% 9.6%;
+    height: 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.card-text{
+    width: 14rem;
+}
+
+input{
+    width: 286px;
+    background-color: #e67a7a;
+    color: white;
+    padding: 4.5%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input:hover{
+    background-color: rgb(255, 179, 179);
+    transition: 1s;
+}
+
+/*DETALLES*/
+a{
+    margin-top: 5%;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover{
+    color: rgb(131, 130, 130);
+}
+
+h2{
+    border-radius:5px;  
+    margin-top: 15px;   
+}
+
+hr{
+    border: 1px solid #e67a7a;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 14px;
+}
